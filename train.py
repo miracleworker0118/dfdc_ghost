@@ -96,7 +96,7 @@ def train_ghostnet():
         #print(type(train_loader))
         startTime = time.perf_counter()
         for images, labels in tqdm(train_loader):
-            print(images.shape)
+            #print(images.shape)
             #print(f'Image Extracting:{time.perf_counter()-startTime}')
             startTime = time.perf_counter()
             images, labels = images.to(device, non_blocking=True), labels.to(device, non_blocking=True)
